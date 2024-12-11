@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/swiper.css" />
+    <link rel="stylesheet" href="assets/css/rumpon.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="keywords" content="Rumpon" />
+    <meta
+      name="description"
+      content="Solusi Kebutuhan Gorden Amanah &
+    Profesional Surabaya, Sidoarjo & Sekitarnya"
+    />
+    <link
+      rel="shortcut icon"
+      href="./assets/images/icon-rumpon.jpg"
+      type="image/x-icon"
+    />
+    <title>Rumpon</title>
+  </head>
+  <body class="bg-white justify-center mx-auto">
+    <!-- Navbar -->
+    <nav class="bg-white fixed w-full z-20 top-0 start-0 border-gray-200">
+      <div
+        class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
+      >
+        <a
+          href="https://flowbite.com/"
+          class="flex items-center space-x-3 rtl:space-x-reverse"
+        >
+          <img
+            src="./assets/images/logo-rumpon.webp"
+            alt="logo-rumpon"
+            class="md:w-32 w-28"
+          />
+        </a>
+        <button
+          data-collapse-toggle="navbar-default"
+          type="button"
+          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+          aria-controls="navbar-default"
+          aria-expanded="false"
+        >
+          <span class="sr-only">Open main menu</span>
+          <svg
+            class="w-5 h-5"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 17 14"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M1 1h15M1 7h15M1 13h15"
+            />
+          </svg>
+        </button>
+        <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+          <ul
+            class="font-medium flex flex-col p-4 md:p-0 mt-0 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white"
+          >
+            <li>
+              <a
+                href=""
+                class="block font-primary py-2 px-3 text-black hover:bg-black hover:text-white md:hover:text-black md:hover:font-bold md:hover:bg-transparent md:bg-transparent md:text-slate-900 md:p-0"
+                aria-current="page"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="#layanan"
+                class="block font-primary py-2 px-3 text-black hover:bg-black hover:text-white md:hover:text-black md:hover:font-bold md:hover:bg-transparent md:bg-transparent md:text-slate-900 md:p-0"
+                >Layanan Kami</a
+              >
+            </li>
+            <li>
+              <a
+                href="#karya"
+                class="block font-primary py-2 px-3 text-black hover:bg-black hover:text-white md:hover:text-black md:hover:font-bold md:hover:bg-transparent md:bg-transparent md:text-slate-900 md:p-0"
+                >Hasil Karya</a
+              >
+            </li>
+            <li>
+              <a
+                href="#contact"
+                class="block font-primary py-2 px-3 text-black hover:bg-black hover:text-white md:hover:text-black md:hover:font-bold md:hover:bg-transparent md:bg-transparent md:text-slate-900 md:p-0"
+                >Hubungi Kami</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero -->
+    <section
+      class="bg-[url('../images/hero.webp')] bg-cover md:mb-14 mb-10 md:h-screen min-h-[90vh] flex items-center justify-center"
+    >
+      <div class="md:mx-auto text-center">
+        <h1
+          class="md:text-8xl text-4xl mx-6 mb-10 font-bold text-white font-primary"
+        >
+          Solusi Kebutuhan <br class="md:block hidden" />
+          Gorden Amanah & Profesional <br class="md:block hidden" />
+          Surabaya, Sidoarjo & Sekitarnya
+        </h1>
+        <div class="md:flex flex-none gap-8">
+          <a
+            onclick="prev(swiperHero)"
+            class="cursor-pointer align-middle ml-auto justify-end my-auto md:block hidden"
+          >
+            <i
+              class="fa-solid fa-chevron-left md:text-4xl bg-white text-sm md:px-4 md:py-3 px-2 py-1.5"
+            ></i>
+          </a>
+          <div>
+            <div class="swiper swiperHero max-w-6xl">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img
+                    src="./assets/images/hero-slider.webp"
+                    alt="gambar-hero-slider-1"
+                    class="rounded-lg"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="./assets/images/hero-slider.webp"
+                    alt="gambar-hero-slider-2"
+                    class="rounded-lg"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="./assets/images/hero-slider.webp"
+                    alt="gambar-hero-slider-3"
+                    class="rounded-lg"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="./assets/images/hero-slider.webp"
+                    alt="gambar-hero-slider-4"
+                    class="rounded-lg"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="./assets/images/hero-slider.webp"
+                    alt="gambar-hero-slider-5"
+                    class="rounded-lg"
+                  />
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+
+          <a
+            onclick="next(swiperHero)"
+            class="cursor-pointer align-middle mr-auto justify-start my-auto md:block hidden"
+          >
+            <i
+              class="fa-solid fa-chevron-right md:text-4xl bg-white text-sm md:px-4 md:py-3 px-2 py-1.5"
+            ></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Komitment -->
+    <section
+      id="layanan"
+      class="mt-10 md:mb-24 mb-10 mx-auto text-center justify-center max-w-screen-xl"
+    >
+      <div class="mx-6">
+        <h2
+          class="md:text-4xl text-base text-orange-300 font-[500] md:mb-5 mb-1"
+        >
+          Komitmen Layanan Kami
+        </h2>
+        <p
+          class="md:text-6xl text-xl font-bold md:mb-9 mb-5 font-primary md:leading-[69px]"
+        >
+          7 Tahun Lebih Menjadi Pilihan Jasa <br class="md:block hidden" />
+          Layanan Pembuatan dan Pemasangan Gorden <br class="md:block hidden" />
+          Untuk Wilayah Surabaya, Sidoarjo & Sekitarnya
+        </p>
+      </div>
+
+      <div class="bg-[#F7F8FD] md:px-10 md:py-16 px-5 py-8 my-10 rounded-2xl">
+        <h3 class="md:text-5xl text-xl font-bold">Kami Bisa Membantu</h3>
+        <div class="md:mt-20 mt-5 mx-auto justify-center items-center">
+          <button
+            type="button"
+            class="md:px-12 md:py-5 px-6 py-2.5 md:m-2 m-1 rounded-lg bg-white md:text-lg text-xs font-semibold"
+          >
+            <i class="fa-solid fa-circle text-cyan-400 mr-2"></i> Gorden Rumah
+          </button>
+          <button
+            type="button"
+            class="md:px-12 md:py-5 px-6 py-2.5 md:m-2 m-1 rounded-lg bg-white md:text-lg text-xs font-semibold"
+          >
+            <i class="fa-solid fa-circle text-yellow-400 mr-2"></i> Gorden Rumah
+            Sakit
+          </button>
+          <button
+            type="button"
+            class="md:px-12 md:py-5 px-6 py-2.5 md:m-2 m-1 rounded-lg bg-white md:text-lg text-xs font-semibold"
+          >
+            <i class="fa-solid fa-circle text-pink-400 mr-2"></i> Gorden Kampus
+          </button>
+          <button
+            type="button"
+            class="md:px-12 md:py-5 px-6 py-2.5 md:m-2 m-1 rounded-lg bg-white md:text-lg text-xs font-semibold"
+          >
+            <i class="fa-solid fa-circle text-purple-400 mr-2"></i> Gorden Hotel
+          </button>
+          <button
+            type="button"
+            class="md:px-12 md:py-5 px-6 py-2.5 md:m-2 m-1 rounded-lg bg-white md:text-lg text-xs font-semibold"
+          >
+            <i class="fa-solid fa-circle text-purple-400 mr-2"></i> Gorden
+            Kantor
+          </button>
+          <button
+            type="button"
+            class="md:px-12 md:py-5 px-6 py-2.5 md:m-2 m-1 rounded-lg bg-white md:text-lg text-xs font-semibold"
+          >
+            <i class="fa-solid fa-circle text-cyan-400 mr-2"></i> Gorden
+            Apartemen
+          </button>
+          <button
+            type="button"
+            class="md:px-12 md:py-5 px-6 py-2.5 md:m-2 m-1 rounded-lg bg-white md:text-lg text-xs font-semibold"
+          >
+            <i class="fa-solid fa-circle text-yellow-400 mr-2"></i> Fed and
+            State GOVT
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!--  Testimoni -->
+    <section
+      id="karya"
+      class="mt-10 md:mb-24 mb-10 mx-auto text-center justify-center max-w-6xl"
+    >
+      <div class="mx-6 md:mb-16 mb-5">
+        <h2
+          class="md:text-4xl text-base text-orange-300 font-[500] md:mb-5 mb-1"
+        >
+          Kepuasan Tinggi Pelanggan
+        </h2>
+        <p class="md:text-6xl text-xl font-bold font-primary md:leading-[69px]">
+          Pekerjaan Yang telah Kami Selesaikan
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-3 grid-cols-1 md:gap-x-8 md:gap-y-12 gap-6">
+        <div class="cursor-pointer md:mx-0 mx-6">
+          <img
+            src="./assets/images/renovasi-dapur.webp"
+            alt=""
+            class="w-full"
+            onclick="showModal(this)"
+            data-modal="lightbox-0"
+          />
+          <div
+            class="flex bg-[#F6F2F2] border-b-2 border-[#F37E21] md:py-10 py-6 px-8"
+          >
+            <div class="text-start">
+              <h3 class="md:text-3xl text-md font-bold font-primary">
+                Renovasi Dapur
+              </h3>
+              <p class="md:text-base text-sm">Bapak Rizal - Surabaya</p>
+            </div>
+            <a class="align-middle ml-auto justify-end">
+              <i
+                class="fa-solid fa-chevron-right md:text-2xl text-sm rounded-full border border-[#F37E21] text-[#F37E21] hover:bg-[#F37E21] hover:text-white md:px-4 md:py-3 px-2 py-1.5"
+              ></i>
+            </a>
+          </div>
+        </div>
+        <div class="cursor-pointer md:mx-0 mx-6">
+          <img
+            src="./assets/images/meeting.webp"
+            alt=""
+            class="w-full"
+            onclick="showModal(this)"
+            data-modal="lightbox-0"
+          />
+          <div
+            class="flex bg-[#F6F2F2] border-b-2 border-[#F37E21] md:py-10 py-6 px-8"
+          >
+            <div class="text-start">
+              <h3 class="md:text-3xl text-md font-bold font-primary">
+                Meeting Room
+              </h3>
+              <p class="md:text-base text-sm">Kampus Petra - Surabaya</p>
+            </div>
+            <a class="align-middle ml-auto justify-end">
+              <i
+                class="fa-solid fa-chevron-right md:text-2xl text-sm rounded-full border border-[#F37E21] text-[#F37E21] hover:bg-[#F37E21] hover:text-white md:px-4 md:py-3 px-2 py-1.5"
+              ></i>
+            </a>
+          </div>
+        </div>
+        <div class="cursor-pointer md:mx-0 mx-6">
+          <img
+            src="./assets/images/ruang-toko.webp"
+            alt=""
+            class="w-full"
+            onclick="showModal(this)"
+            data-modal="lightbox-0"
+          />
+          <div
+            class="flex bg-[#F6F2F2] border-b-2 border-[#F37E21] md:py-10 py-6 px-8"
+          >
+            <div class="text-start">
+              <h3 class="md:text-3xl text-md font-bold font-primary">
+                Ruang Toko
+              </h3>
+              <p class="md:text-base text-sm">Aksamedia - Surabaya</p>
+            </div>
+            <a class="align-middle ml-auto justify-end">
+              <i
+                class="fa-solid fa-chevron-right md:text-2xl text-sm rounded-full border border-[#F37E21] text-[#F37E21] hover:bg-[#F37E21] hover:text-white md:px-4 md:py-3 px-2 py-1.5"
+              ></i>
+            </a>
+          </div>
+        </div>
+        <div class="cursor-pointer md:mx-0 mx-6">
+          <img
+            src="./assets/images/ruang-dokter.webp"
+            alt=""
+            class="w-full"
+            onclick="showModal(this)"
+            data-modal="lightbox-0"
+          />
+          <div
+            class="flex bg-[#F6F2F2] border-b-2 border-[#F37E21] md:py-10 py-6 px-8"
+          >
+            <div class="text-start">
+              <h3 class="md:text-3xl text-md font-bold font-primary">
+                Ruang Dokter
+              </h3>
+              <p class="md:text-base text-sm">Dokter Ameera - Sidoarjo</p>
+            </div>
+            <a class="align-middle ml-auto justify-end">
+              <i
+                class="fa-solid fa-chevron-right md:text-2xl text-sm rounded-full border border-[#F37E21] text-[#F37E21] hover:bg-[#F37E21] hover:text-white md:px-4 md:py-3 px-2 py-1.5"
+              ></i>
+            </a>
+          </div>
+        </div>
+        <div class="cursor-pointer md:mx-0 mx-6">
+          <img
+            src="./assets/images/ruang-tamu.webp"
+            alt=""
+            class="w-full"
+            onclick="showModal(this)"
+            data-modal="lightbox-0"
+          />
+          <div
+            class="flex bg-[#F6F2F2] border-b-2 border-[#F37E21] md:py-10 py-6 px-8"
+          >
+            <div class="text-start">
+              <h3 class="md:text-3xl text-md font-bold font-primary">
+                Ruang Tamu
+              </h3>
+              <p class="md:text-base text-sm">Bu Aisyah - Surabaya</p>
+            </div>
+            <a class="align-middle ml-auto justify-end">
+              <i
+                class="fa-solid fa-chevron-right md:text-2xl text-sm rounded-full border border-[#F37E21] text-[#F37E21] hover:bg-[#F37E21] hover:text-white md:px-4 md:py-3 px-2 py-1.5"
+              ></i>
+            </a>
+          </div>
+        </div>
+        <div class="cursor-pointer md:mx-0 mx-6">
+          <img
+            src="./assets/images/toko-eskrim.webp"
+            alt=""
+            class="w-full"
+            onclick="showModal(this)"
+            data-modal="lightbox-0"
+          />
+          <div
+            class="flex bg-[#F6F2F2] border-b-2 border-[#F37E21] md:py-10 py-6 px-8"
+          >
+            <div class="text-start">
+              <h3 class="md:text-3xl text-md font-bold font-primary">
+                Toko Es Krim
+              </h3>
+              <p class="md:text-base text-sm">Mixue - Surabaya</p>
+            </div>
+            <a class="align-middle ml-auto justify-end">
+              <i
+                class="fa-solid fa-chevron-right md:text-2xl text-sm rounded-full border border-[#F37E21] text-[#F37E21] hover:bg-[#F37E21] hover:text-white md:px-4 md:py-3 px-2 py-1.5"
+              ></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Jenis -->
+    <section
+      id="contact"
+      class="mt-10 md:mb-[76px] mx-auto text-center justify-center max-w-screen-2xl"
+    >
+      <div class="mx-6">
+        <h2
+          class="md:text-4xl text-base text-orange-300 font-[500] md:mb-5 mb-1"
+        >
+          JENIS GORDEN KAMI
+        </h2>
+        <p
+          class="md:text-6xl text-xl font-bold md:mb-9 mb-5 font-primary md:leading-[69px]"
+        >
+          KUALITAS MENJADI JAMINAN
+        </p>
+      </div>
+      <div class="md:flex flex-none md:mx-auto mx-6">
+        <a
+          class="align-middle ml-auto justify-start my-auto md:block hidden"
+          onclick="prev(swiperJenis)"
+        >
+          <i
+            class="fa-solid fa-chevron-left md:text-2xl text-sm rounded-full border border-[#F37E21] text-[#F37E21] hover:bg-[#F37E21] hover:text-white md:px-4 md:py-3 px-2 py-1.5"
+          ></i>
+        </a>
+        <div class="swiper swiperJenis md:max-w-6xl">
+          <div class="swiper-wrapper pb-10">
+            <div class="swiper-slide">
+              <div class="shadow-xl relative w-full">
+                <img
+                  src="./assets/images/kain-sutra.webp"
+                  alt="gambar-kain-sutra"
+                  class="cursor-pointer w-full"
+                  onclick="showModal(this)"
+                  data-modal="lightbox-0"
+                />
+                <div class="bg-white md:p-8 p-5">
+                  <h3 class="md:text-2xl text-lg font-bold text-start">
+                    Kain Sutra
+                  </h3>
+                </div>
+                <a
+                  onclick="next(swiperJenis)"
+                  class="absolute cursor-pointer right-0 md:bottom-[-55px] bottom-[-45px] mb-4 bg-[#F6F2F2] md:px-10 md:py-6 px-5 py-3 border-l-4 border-orange-500"
+                >
+                  <i class="fa-solid fa-arrow-right text-2xl"></i>
+                </a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="shadow-xl relative w-full">
+                <img
+                  src="./assets/images/vertikal-blind.webp"
+                  alt="gambar-vertikal-blind"
+                  class="cursor-pointer w-full"
+                  onclick="showModal(this)"
+                  data-modal="lightbox-0"
+                />
+                <div class="bg-white md:p-8 p-5">
+                  <h3 class="md:text-2xl text-lg font-bold text-start">
+                    Vertikal Blind
+                  </h3>
+                </div>
+                <a
+                  onclick="next(swiperJenis)"
+                  class="absolute cursor-pointer right-0 md:bottom-[-55px] bottom-[-45px] mb-4 bg-[#F6F2F2] md:px-10 md:py-6 px-5 py-3 border-l-4 border-orange-500"
+                >
+                  <i class="fa-solid fa-arrow-right text-2xl"></i>
+                </a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="shadow-xl relative w-full">
+                <img
+                  src="./assets/images/roller-blind.webp"
+                  alt="gambar-roller-blind"
+                  class="cursor-pointer w-full"
+                  onclick="showModal(this)"
+                  data-modal="lightbox-0"
+                />
+                <div class="bg-white md:p-8 p-5">
+                  <h3 class="md:text-2xl text-lg font-bold text-start">
+                    Roller Blind
+                  </h3>
+                </div>
+                <a
+                  onclick="next(swiperJenis)"
+                  class="absolute cursor-pointer right-0 md:bottom-[-55px] bottom-[-45px] mb-4 bg-[#F6F2F2] md:px-10 md:py-6 px-5 py-3 border-l-4 border-orange-500"
+                >
+                  <i class="fa-solid fa-arrow-right text-2xl"></i>
+                </a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="shadow-xl relative w-full">
+                <img
+                  src="./assets/images/kain-sutra.webp"
+                  alt="gambar-kain-sutra-2"
+                  class="cursor-pointer w-full"
+                  onclick="showModal(this)"
+                  data-modal="lightbox-0"
+                />
+                <div class="bg-white md:p-8 p-5">
+                  <h3 class="md:text-2xl text-lg font-bold text-start">
+                    Kain Sutra
+                  </h3>
+                </div>
+                <a
+                  onclick="next(swiperJenis)"
+                  class="absolute cursor-pointer right-0 md:bottom-[-55px] bottom-[-45px] mb-4 bg-[#F6F2F2] md:px-10 md:py-6 px-5 py-3 border-l-4 border-orange-500"
+                >
+                  <i class="fa-solid fa-arrow-right text-2xl"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a
+          class="align-middle mr-auto justify-end my-auto md:block hidden"
+          onclick="next(swiperJenis)"
+        >
+          <i
+            class="fa-solid fa-chevron-right md:text-2xl text-sm rounded-full border border-[#F37E21] text-[#F37E21] hover:bg-[#F37E21] hover:text-white md:px-4 md:py-3 px-2 py-1.5"
+          ></i>
+        </a>
+      </div>
+    </section>
+
+    <!-- Diskusi -->
+    <section
+      class="mt-10 md:mb-24 mb-10 mx-auto text-center justify-center max-w-screen-xl"
+    >
+      <div class="mx-6">
+        <h2 class="md:text-5xl text-xl font-bold md:mb-20">
+          Diskusikan Kebutuhan Anda Lebih Lanjut <br class="md:block hidden" />
+          <span class="text-red-700">Kami Siap Datang</span> dan Diskusi GRATIS
+        </h2>
+
+        <div
+          class="md:block hidden max-w-2xl mx-auto bg-green-700 text-white md:text-4xl text-base font-semibold rounded-xl md:py-5 py-2.5"
+        >
+          KONSULTASI DULU, 100% GRATIS
+        </div>
+      </div>
+    </section>
+
+    <!-- Fix Button Konsultasi -->
+    <div class="fixed bottom-0 bg-[#1B832B] w-full md:hidden z-[999]">
+      <div class="w-full inline-flex p-4">
+        <a
+          href=""
+          target="_blank"
+          class="w-full text-center text-base font-semibold text-white"
+        >
+          KONSULTASI DULU, 100% GRATIS</a
+        >
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-[#000] text-white">
+      <div class="mx-auto w-full max-w-screen-xl">
+        <div class="mx-6">
+          <div class="grid md:grid-cols-2 grid-cols-1 md:py-10 py-6 w-full">
+            <div class="mx-auto text-center md:mx-0 md:text-start md:mb-0 mb-6">
+              <h3 class="text-xl font-semibold md:mb-10 mb-5 font-primary">
+                Alamat Kami
+              </h3>
+              <ul>
+                <li class="md:mb-5 mb-3">
+                  <a href="" class="md:text-lg text-sm flex my-auto"
+                    ><img
+                      src="./assets/images/directbox-send.svg"
+                      alt="logo-envelope-rumpon"
+                      class="mr-2"
+                    />
+                    juraganfloring@gmail.com</a
+                  >
+                </li>
+                <li class="md:mb-5 mb-3">
+                  <a href="" class="md:text-lg text-sm flex"
+                    ><img
+                      src="./assets/images/call-outgoing.svg"
+                      alt="logo-call-rumpon"
+                      class="mr-2"
+                    />
+                    +088 11 22 33 44 55</a
+                  >
+                </li>
+                <li class="md:mb-5">
+                  <a href="" class="md:text-lg text-sm text-left flex"
+                    ><img
+                      src="./assets/images/location.svg"
+                      alt="logo-location-rumpon"
+                      class="mr-2"
+                    />
+                    Kedung Cowek Suramadu <br />Nomer 18 A Surabaya</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="my-auto mx-auto text-center md:mb-auto mb-14">
+              <h3
+                class="md:text-4xl text-xl text-yellow-300 font-primary md:mb-5"
+              >
+                www.surabayagorden.id
+              </h3>
+              <p class="md:text-3xl text-base font-ligh font-primary">
+                Gorden Surabaya, Gorden Sidoarjo, Jasa Gorden Surabaya
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Modal -->
+    <div id="lightbox-0" class="modal">
+      <div
+        class="swiper swiperLightbox2 lightbox relative"
+        style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff"
+      >
+        <div class="absolute bottom-5 right-5 w-full text-end z-10">
+          <a
+            href="javascript:void(0)"
+            class="align-middle justify-start my-auto"
+            onclick="prev(swiperLightbox2)"
+          >
+            <i
+              class="fa-solid fa-chevron-left md:text-2xl text-sm rounded-full border border-white text-white md:px-4 md:py-3 px-2 py-1.5"
+            ></i>
+          </a>
+          <a
+            href="javascript:void(0)"
+            class="align-middle justify-start my-auto"
+            onclick="next(swiperLightbox2)"
+          >
+            <i
+              class="fa-solid fa-chevron-right md:text-2xl text-sm rounded-full border border-white text-white md:px-4 md:py-3 px-2 py-1.5"
+            ></i>
+          </a>
+        </div>
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="./assets/images/meeting.webp" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets/images/renovasi-dapur.webp" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets/images/ruang-dokter.webp" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets/images/ruang-tamu.webp" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets/images/ruang-toko.webp" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets/images/toko-eskrim.webp" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets/images/meeting.webp" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets/images/renovasi-dapur.webp" />
+          </div>
+        </div>
+      </div>
+      <div thumbsSlider="" class="swiper swiperLightbox lightbox">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="./assets/images/meeting.webp" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets/images/renovasi-dapur.webp" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets/images/ruang-dokter.webp" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets/images/ruang-tamu.webp" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets/images/ruang-toko.webp" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets/images/toko-eskrim.webp" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets/images/meeting.webp" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets/images/renovasi-dapur.webp" />
+          </div>
+        </div>
+      </div>
+      <div class="text-white">
+        <h3 class="mt-5 md:text-4xl text-xl font-bold font-primary">Rumpon</h3>
+      </div>
+    </div>
+
+    <!-- Script -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+  </body>
+</html>

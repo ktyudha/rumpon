@@ -1,0 +1,31 @@
+:root {
+  --font-default: "Montserrat", sans-serif;
+  --font-primary: "Titillium Web", sans-serif;
+}
+
+body {
+  font-family: var(--font-default);
+}
+
+.font-primary {
+  font-family: var(--font-primary);
+}
+
+/* MODAL */
+.blocker {
+  z-index: 99 !important;
+  backdrop-filter: blur(10px);
+}
+
+.modal {
+  background: transparent !important;
+  --webkit-box-shadow: 0 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  max-width: 700px !important;
+  padding: 0 !important;
+}
+.close-modal {
+  /* display: none !important; */
+  z-index: 100 !important;
+}
