@@ -10,7 +10,6 @@ var swiperHero = new Swiper(".swiperHero", {
     clickable: true,
   },
   breakpoints: {
-    // Untuk layar lebih kecil dari 768px (tablet / mobile)
     768: {
       slidesPerView: 3, // Menampilkan 2 slide
       spaceBetween: 20, // Mengurangi jarak antar slide
